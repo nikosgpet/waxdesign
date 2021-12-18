@@ -1,0 +1,80 @@
+{
+  "files.exclude": {
+    "**/.git": false,
+    "**/.svn": false,
+    "**/.hg": false,
+    "**/CVS": false,
+    "**/.DS_Store": false,
+    "**/Thumbs.db": false,
+    "**/node_modules": false,
+    "**/.history": false,
+    "**/.vscode": false,
+    "**/.editorconfig": false,
+    "**/*git*": false,
+    "**/.prettier*": false,
+    "**/.eslintrc.json": false,
+    "**/*yarn*": false,
+    "**/.svelte-kit": false,
+    "**/dist": false
+  },
+  "explorerExclude.backup": null,
+  "cSpell.words": [
+    "airtable",
+    "asyncairtable",
+    "bordergray",
+    "buttonblue",
+    "contenteditable",
+    "esbuild",
+    "gsap",
+    "iarna",
+    "inbutton",
+    "mouseenter",
+    "mouseleave",
+    "mouseout",
+    "nestjs",
+    "Nikos",
+    "nikosgpet",
+    "nowrap",
+    "nrwl",
+    "nxext",
+    "Panos",
+    "Peteinatos",
+    "postcss",
+    "preprocessors",
+    "prerender",
+    "Smallcaps",
+    "smartlife",
+    "smartthings",
+    "Strikethrough",
+    "sveltejs",
+    "sveltekit",
+    "tailwindcss",
+    "vite"
+  ],
+  "files.watcherExclude": {
+    "**/git_modules/*/**": true
+  },
+  "search.exclude": {
+    "**/git_modules/*/**": true
+  },
+  "cSpell.ignoreWords": [
+    "Consolas",
+    "Menlo",
+    "Neue",
+    "Noto",
+    "Roboto",
+    "Segoe",
+    "appk",
+    "entrypoint",
+    "mdsvex",
+    "monospace",
+    "outfile",
+    "pcss",
+    "scrollto",
+    "semibold",
+    "vicgutt"
+  ],
+  "editor.quickSuggestions": {
+    "strings": true
+  }
+}
