@@ -2,6 +2,13 @@
 	import Divider from '$lib/components/Divider.svelte';
   import Button from "$lib/components/Button.svelte";
   import Icon from '$lib/components/Icon.svelte';
+  import BlockStyles from '$lib/components/Overlay/BlockStyles.svelte';
+  import InlineStyles from '$lib/components/Overlay/InlineStyles.svelte';
+  import FormattingOptions from "$lib/components/Overlay/FormattingOptions/FormattingOptions.svelte";
+  import CaseOptions from "$lib/components/Overlay/CaseOptions/CaseOptions.svelte";
+  import Table from '$lib/components/Overlay/Table.svelte';
+  import Symbols from '$lib/components/Overlay/Symbols.svelte';
+
   
 </script>
 
@@ -36,7 +43,8 @@
       tooltipClass="mt-1"
     >
       <div class="pl-2 pr-3 inline-block text-sm text-buttonblue-800 font-medium">Text</div> 
-      <Icon icon="arrow_drop_down"/> 
+      <Icon icon="arrow_drop_down"/>
+      <BlockStyles slot="overlay" position="tl"/>
     </Button>
     <Divider/>
     <Button 
@@ -46,6 +54,7 @@
     >
       <div class="pl-2 pr-4 inline-block text-sm text-buttonblue-800 font-medium">Styles</div> 
       <Icon icon="arrow_drop_down"/> 
+      <InlineStyles slot="overlay" position="tl"/>
     </Button>
     <Divider/>
     <Button 
@@ -67,7 +76,9 @@
       icon="more_horiz"
       tooltip="More formatting | options" 
       tooltipClass="mt-1"
-    />
+    >
+      <FormattingOptions slot="overlay" position="tl"/>
+    </Button>
 
     <Button 
       className="h-6 pl-[3px]"
@@ -76,6 +87,7 @@
     >
       <Icon icon="format_size"/> 
       <Icon icon="arrow_drop_down"/> 
+      <CaseOptions slot="overlay" position="tl"/>
     </Button>
     <Divider/>
     <Button 
@@ -104,13 +116,17 @@
       icon="keyboard_command_key"
       tooltip="Add a symbol" 
       tooltipClass="mt-1"
-    />
+    >
+      <Symbols slot="overlay" position="tl"/>
+    </Button>
     <Button 
-      className="h-6 w-6" 
+      className="h-6 w-6"
       icon="border_all"
-      tooltip="Add table" 
+      tooltip="Add table"
       tooltipClass="mt-1"
-    />
+    >
+      <Table slot="overlay" position="tl"/>
+    </Button>
     <Divider/>
     <Button 
       className="h-6 w-6" 
@@ -134,6 +150,7 @@
     >
       <Icon icon="text_format"/> 
       <Icon icon="arrow_drop_down"/> 
+      <FormattingOptions slot="overlay" position="tl"/>
     </Button>
   </div>
 

@@ -4,10 +4,10 @@
   export let title;
   export let sub = '';
   export let active = false;
+  export let deactivateTooltip = false;
+
   let showSubButton = false;
   let hoverSubButton = false;
-  
-  $: console.log('showSubButton', showSubButton)
 </script>
 
 <div class="flex w-full" on:mouseenter={() => showSubButton=true} on:mouseleave={() => showSubButton=false}>
@@ -17,8 +17,12 @@
   </div>
   {/if}
   
-  <div class="flex relative w-full items-center h-7 px-2 py-0.5 rounded-[4px] cursor-pointer select-none overflow-hidden
-                {active ? 'bg-buttonblue-100 hover:bg-buttonblue-200 active:bg-buttonblue-300' : 'hover:bg-buttonblue-100 active:bg-buttonblue-200'}">
+  <div 
+    class="flex w-full items-center h-7 px-2 py-0.5 rounded-[4px] cursor-pointer select-none overflow-hidden
+          {active ? 'bg-buttonblue-100 hover:bg-buttonblue-200 active:bg-buttonblue-300' : 'hover:bg-buttonblue-100 active:bg-buttonblue-200'}
+          {active ? 'active' : ''} {hoverSubButton ? 'subbutton' : ''}
+          "
+  >
     {#if !sub}
       <div class="relative z-10 h-6 w-6 min-w-[24px] mr-2 border border-buttonblue-300 rounded-[4px] bg-white"></div>
     {/if}
@@ -27,26 +31,30 @@
       {title}
     </div>
 
-    <div class="{(showSubButton ? '' : 'hidden')} {(hoverSubButton ? 'inbutton' : '')} {(active ? 'active' : '')}">
+    <div class="{(showSubButton ? '' : 'hidden')}">
       <Button 
         on:mouseenter={() => hoverSubButton=true}
         on:mouseleave={() => hoverSubButton=false}
         className="relative z-20 h-[18px] w-[18px]"
         icon={sub ? 'more_horiz' : 'add'}
         {active}
+        {deactivateTooltip}
         selected={true}
+        tooltip={sub ? 'Custom style options' : 'Add custom style'}
+        tooltipClass="mt-3"
       />
+        <!-- showTooltip={true} -->
     </div>
   </div>
 </div>
 
-<style type="postcss" global>
-  .inbutton::before {
-    @apply absolute top-0 left-0 right-0 bottom-0 bg-buttonblue-100 rounded-[4px];
-    content: '';
+
+<style type="postcss">
+  .subbutton {
+    @apply active:bg-buttonblue-100;
   }
 
-  .inbutton.active::before {
-    @apply bg-buttonblue-200;
+  .subbutton.active {
+    @apply active:bg-buttonblue-200;
   }
 </style>
