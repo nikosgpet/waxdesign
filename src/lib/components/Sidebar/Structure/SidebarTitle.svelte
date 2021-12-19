@@ -29,8 +29,8 @@
         on:click={onAddClick} 
         on:mouseenter={() => hoverSubButton=true} 
         on:mouseleave={() => hoverSubButton=false}
-        className="h-[18px] w-[18px]" 
-        icon="add" 
+        className="relative z-20 h-[18px] w-[18px]" 
+        icon="more_horiz" 
         {active}
         selected={true}
       />

@@ -7,7 +7,7 @@ import Navbar from "$lib/components/Navbar.svelte";
 
 <div class="flex flex-col w-full h-full">
   <Navbar/>
-  <div class="flex h-full w-full">
+  <div class="flex flex-grow w-full overflow-hidden">
     <Sidebar/>
     <Document/>
   </div>

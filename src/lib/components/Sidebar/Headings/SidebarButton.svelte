@@ -7,20 +7,20 @@
   let showSubButton = false;
   let hoverSubButton = false;
   
-
+  $: console.log('showSubButton', showSubButton)
 </script>
 
 <div class="flex w-full" on:mouseenter={() => showSubButton=true} on:mouseleave={() => showSubButton=false}>
   {#if sub}
-  <div class="h-6 w-6 min-w-[24px] ml-[11px] mr-0.5">
+  <div class="h-6 w-6 min-w-[24px] ml-[8px]">
     <div class="{sub === 'middle' ? 'h-8 -m-1' : 'h-5 -m-1'} w-0.5 mx-auto bg-buttonblue-300"></div>
   </div>
   {/if}
   
-  <div class="flex relative w-full items-center h-7 px-2 py-0.5 rounded-[4px] cursor-pointer select-none
+  <div class="flex relative w-full items-center h-7 px-2 py-0.5 rounded-[4px] cursor-pointer select-none overflow-hidden
                 {active ? 'bg-buttonblue-100 hover:bg-buttonblue-200 active:bg-buttonblue-300' : 'hover:bg-buttonblue-100 active:bg-buttonblue-200'}">
     {#if !sub}
-      <div class="relative z-10 h-6 w-6 mr-2 border border-buttonblue-300 rounded-[4px] bg-white"></div>
+      <div class="relative z-10 h-6 w-6 min-w-[24px] mr-2 border border-buttonblue-300 rounded-[4px] bg-white"></div>
     {/if}
   
     <div class="relative z-10 flex-grow text-left text-sm text-buttonblue-900 max-w-full overflow-hidden whitespace-nowrap text-ellipsis">
@@ -31,8 +31,8 @@
       <Button 
         on:mouseenter={() => hoverSubButton=true}
         on:mouseleave={() => hoverSubButton=false}
-        className="h-[18px] w-[18px]"
-        icon="add"
+        className="relative z-20 h-[18px] w-[18px]"
+        icon={sub ? 'more_horiz' : 'add'}
         {active}
         selected={true}
       />

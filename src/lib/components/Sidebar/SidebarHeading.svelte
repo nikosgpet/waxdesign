@@ -4,6 +4,6 @@
 </script>
 
 
-<div class="pt-[14px] pl-2 pb-1 text-[11px] uppercase font-medium text-[#8991A1] {className}">
+<div class="pt-[14px] pl-2 pb-1 text-[11px] uppercase font-medium text-buttonblue-600 {className}">
   {title}
 </div>

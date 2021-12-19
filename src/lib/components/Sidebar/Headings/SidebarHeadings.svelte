@@ -4,7 +4,7 @@
 
 </script>
 
-<div class="scrollbar w-44 px-1.5 flex flex-col h-full overflow-y-auto border-r border-r-bordergray gap-0.5">
+<div class="scrollbar w-44 px-1.5 pb-4 flex flex-col h-full overflow-y-auto border-r border-r-bordergray gap-0.5">
   <SidebarHeading title="Basic blocks"/>
   <SidebarButton title="Text" active={true}/>
   <SidebarButton title="Heading 1"/>

@@ -5,7 +5,7 @@ import Paragraph from "$lib/components/Document/Paragraph.svelte";
 
 </script>
 <div class="scrollbar ml-[-224px] overflow-y-auto  w-full">
-  <div class="w-[680px] pt-10 pb-24 mx-auto">
+  <div class="w-[680px] pt-10 pb-16 mx-auto">
     <Heading1>
       Putting Purpose at the Core of Your Strategy
     </Heading1>
