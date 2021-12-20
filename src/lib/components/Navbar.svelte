@@ -12,9 +12,9 @@
   import EditingMode from '$lib/components/Overlay/EditingMode/EditingMode.svelte';
   import LanguageTools from '$lib/components/Overlay/LanguageTools/LanguageTools.svelte';
   import SpellingGrammar from '$lib/components/Overlay/LanguageTools/SpellingGrammar.svelte';
-  import Search from './Overlay/Search/Search.svelte';
-  import languageOverlay from '$lib/stores/languageOverlay';
+  import Search from '$lib/components/Overlay/Search/Search.svelte';
   import searchOverlay from '$lib/stores/searchOverlay';
+  import Comments from '$lib/components/Overlay/Comments/Comments.svelte';
 
   
 </script>
@@ -195,6 +195,9 @@
     <Button 
       className="h-6 w-6"
       icon="fullscreen"
+      tooltip="Go fullscreen"
+      tooltipClass="mt-1 right-2"
     />
   </div>
+  <Comments/>
 </div>

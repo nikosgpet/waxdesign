@@ -19,7 +19,7 @@
   
   <div 
     class="flex w-full items-center h-7 px-2 py-0.5 rounded-[4px] cursor-pointer select-none overflow-hidden
-          {active ? 'bg-buttonblue-100 hover:bg-buttonblue-200 active:bg-buttonblue-300' : 'hover:bg-buttonblue-100 active:bg-buttonblue-200'}
+          {active ? 'bg-buttonblue-200 hover:bg-buttonblue-300 active:bg-buttonblue-300' : 'hover:bg-buttonblue-100 active:bg-buttonblue-200'}
           {active ? 'active' : ''} {hoverSubButton ? 'subbutton' : ''}
           "
   >

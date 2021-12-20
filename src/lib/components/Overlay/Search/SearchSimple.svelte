@@ -7,9 +7,6 @@
 
 
 <Menu className="p-2" absoluteClass="right-3 top-[46px]" shadow='lg'>
-
-
-
   <div class="flex items-center gap-1">
     <label class="relative block">
       <span class="sr-only">Search</span>
