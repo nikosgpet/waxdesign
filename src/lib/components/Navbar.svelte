@@ -8,6 +8,13 @@
   import CaseOptions from "$lib/components/Overlay/CaseOptions/CaseOptions.svelte";
   import Table from '$lib/components/Overlay/Table.svelte';
   import Symbols from '$lib/components/Overlay/Symbols.svelte';
+  import Highlights from '$lib/components/Overlay/Highlights.svelte';
+  import EditingMode from '$lib/components/Overlay/EditingMode/EditingMode.svelte';
+  import LanguageTools from '$lib/components/Overlay/LanguageTools/LanguageTools.svelte';
+  import SpellingGrammar from '$lib/components/Overlay/LanguageTools/SpellingGrammar.svelte';
+  import Search from './Overlay/Search/Search.svelte';
+  import languageOverlay from '$lib/stores/languageOverlay';
+  import searchOverlay from '$lib/stores/searchOverlay';
 
   
 </script>
@@ -150,7 +157,7 @@
     >
       <Icon icon="text_format"/> 
       <Icon icon="arrow_drop_down"/> 
-      <FormattingOptions slot="overlay" position="tl"/>
+      <Highlights slot="overlay" position="tl"/>
     </Button>
   </div>
 
@@ -161,25 +168,32 @@
       tooltip="Search text" 
       subTooltip="⌘+P" 
       tooltipClass="mt-1"
-    />
-    <Button 
-      className="h-6 w-6" 
+      on:click={() => {searchOverlay.openSimple()}}
+    >
+      <Search slot="absolute"/>
+    </Button>
+    <Button
+      className="h-6 w-6"
       icon="spellcheck"
-      tooltip="Language tools" 
+      tooltip="Language tools"
       tooltipClass="mt-1"
-    />
+    >
+      <LanguageTools slot="overlay" position="tr"/>
+      <SpellingGrammar slot="absolute"/>
+    </Button>
     <Button 
       className="h-6 pl-1 pr-0.5"
       tooltip="Change editing mode" 
       tooltipClass="mt-1"
     >
-      <Icon icon="edit"/> 
-      <div class="pl-2 pr-6 inline-block text-sm text-buttonblue-800 font-medium">Editing</div> 
-      <Icon icon="arrow_drop_down"/> 
+      <Icon icon="edit"/>
+      <div class="pl-2 pr-6 inline-block text-sm text-buttonblue-800 font-medium">Editing</div>
+      <Icon icon="arrow_drop_down"/>
+      <EditingMode slot="overlay" position="tr"/>
     </Button>
     <Divider/>
     <Button 
-      className="h-6 w-6" 
+      className="h-6 w-6"
       icon="fullscreen"
     />
   </div>

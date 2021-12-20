@@ -1,7 +1,10 @@
 <script type="ts">
+  import overlayClosed from '$lib/stores/overlay';
   import { createEventDispatcher } from 'svelte';
 
   export let className = '';
+
+  $: onClose($overlayClosed);
 
   const dispatch = createEventDispatcher();
 

@@ -25,29 +25,16 @@
     showOverlay = true;
     dispatch('click');
   }
-
-  function setPosition(node) {
-    let m = 0;
-    if (tooltipPosition === "top" || tooltipPosition === "bottom") {
-      m = node.parentNode.clientWidth / 2 - node.clientWidth / 2;
-      node.style.marginLeft = `${m}px`;
-    } else {
-      m = node.parentNode.clientHeight / 2 - node.clientHeight / 2;
-      node.style.marginTop = `${m}px`;
-    }
-  }
 </script>
 
 
 <div
-  on:mouseenter={() => hoverTooltip = true}
-  on:mouseleave={() => hoverTooltip = false}
   class="{tooltipPosition === 'right' ? 'relative' : ''}"
 >
   <button 
     on:click|stopPropagation={onClick}
-    on:mouseenter
-    on:mouseleave
+    on:mouseenter={() => hoverTooltip = true}
+    on:mouseleave={() => hoverTooltip = false}
     class="{className} flex items-center justify-center rounded-sm 
             {active ? 'bg-buttonblue-200 hover:bg-buttonblue-300 active:bg-buttonblue-300' :
             selected ? 'bg-buttonblue-100 hover:bg-buttonblue-200 active:bg-buttonblue-300' :
@@ -71,5 +58,8 @@
   <Overlay on:close={() => showOverlay = false}>
     <slot name="overlay"></slot>
   </Overlay>
+  {/if}
+  {#if $$slots.absolute}
+  <slot name="absolute"></slot>
   {/if}
 </div>

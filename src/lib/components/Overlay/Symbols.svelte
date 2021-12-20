@@ -17,11 +17,11 @@
 <Menu {position} className="py-3 w-[340px] h-80">
   <label class="px-2 relative block">
     <span class="sr-only">Search</span>
-    <span class="absolute inset-y-0 right-0 flex items-center pr-2">
+    <span class="absolute inset-y-0 right-0 flex items-center pr-4">
       <Icon icon="search"/>
     </span>
     <input 
-      class="placeholder:italic placeholder:text-gray-400 block w-full border border-gray-300 rounded-sm py-1.5 pr-9 pl-3 
+      class="placeholder:text-gray-400 block w-full border border-gray-300 rounded-sm py-1.5 pr-9 pl-3 
         shadow-sm focus:outline-none focus:border-buttonblue-600 focus:ring-buttonblue-600 focus:ring-1 sm:text-sm" 
       placeholder="Search for symbol..." 
       type="text" 
@@ -44,4 +44,3 @@
     {/each}
   </div>
 </Menu>
-
