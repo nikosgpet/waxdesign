@@ -1,6 +1,6 @@
 <script type="ts">
   import Button from "$lib/components/Button.svelte";
-  import CommentsOptions from './CommentsOptions.svelte';
+  import CommentsOptions from '$lib/components/Overlay/Comments/CommentsOptions.svelte';
 
 </script>
 

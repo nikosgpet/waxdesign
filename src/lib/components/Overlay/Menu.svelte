@@ -10,7 +10,8 @@
   <div class="scrollbar bg-white rounded {shadow === 'sm' ? 'drop-shadow-lg' : 'drop-shadow-xl'} border border-bordergray overflow-y-auto overflow-x-hidden 
         {className}
         {position === 'tl' ? 'rounded-tl-none' : ''}
-        {position === 'tr' ? 'rounded-tr-none' : ''}"
+        {position === 'tr' ? 'rounded-tr-none' : ''}
+        {position === 'br' ? 'rounded-br-none' : ''}"
   >
     <slot></slot>
   </div>

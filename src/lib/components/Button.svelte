@@ -15,10 +15,13 @@
   export let showTooltip = false;
   export let tooltipClass = '';
   export let deactivateTooltip = false;
+  export let overlayPosition = 'bottom'; // top, bottom
+  export let iconClass = '';
 
   const dispatch = createEventDispatcher();
   let showOverlay = false;
   let hoverTooltip = false;
+  let overlayRounded = overlayPosition === 'bottom' ? 'rounded-b-none' : 'rounded-t-none';
 
   function onClick(event) {
     hoverTooltip = false;
@@ -39,10 +42,10 @@
             {active ? 'bg-buttonblue-200 hover:bg-buttonblue-300 active:bg-buttonblue-300' :
             selected ? 'bg-buttonblue-100 hover:bg-buttonblue-200 active:bg-buttonblue-300' :
             'hover:bg-buttonblue-100 active:bg-buttonblue-200'}
-            {$$slots.overlay && showOverlay ? 'bg-buttonblue-200 rounded-b-none' : ''}"
+            {$$slots.overlay && showOverlay ? `bg-buttonblue-200 ${overlayRounded}` : ''}"
   >
     <slot>
-      <Icon {icon} {size}/>
+      <Icon {icon} {size} {iconClass}/>
     </slot>
   </button>
 

@@ -1,11 +1,12 @@
 <script>
 import Heading1 from "$lib/components/Document/Heading1.svelte";
 import Heading2 from "$lib/components/Document/Heading2.svelte";
+import Heading3 from "$lib/components/Document/Heading3.svelte";
 import Paragraph from "$lib/components/Document/Paragraph.svelte";
 
 </script>
 <div class="scrollbar ml-[-224px] overflow-y-auto  w-full">
-  <div class="w-[680px] pt-10 pb-16 mx-auto">
+  <div class="w-[722px] pt-10 pb-16 mx-auto">
     <Heading1>
       Putting Purpose at the Core of Your Strategy
     </Heading1>
@@ -43,9 +44,9 @@ import Paragraph from "$lib/components/Document/Paragraph.svelte";
       growth and declining profitability.
     </Paragraph>
 
-    <Heading2>
+    <Heading3>
       Role 1: Redefining the playing field.
-    </Heading2>
+    </Heading3>
     <Paragraph>
       What’s a key difference between low-growth and high-growth companies? 
       The former spend most of their time fighting for market share on one playing 
@@ -130,9 +131,9 @@ import Paragraph from "$lib/components/Document/Paragraph.svelte";
       oil, microbial oil, and tall oil pitch.
     </Paragraph>
 
-    <Heading2>
+    <Heading3>
       Role 2: Reshaping the value proposition.
-    </Heading2>
+    </Heading3>
     <Paragraph>
       When confronted with eroding margins in a rapidly commodifying world, companies often 
       enhance their value propositions by innovating products, services, or business models. 

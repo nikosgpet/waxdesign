@@ -6,10 +6,13 @@
   import languageOverlay from '$lib/stores/languageOverlay';
   import CommentOption from "$lib/components/Overlay/Comments/CommentOption.svelte";
   import CommentsAcceptReject from "$lib/components/Overlay/Comments/CommentsAcceptReject.svelte";
+  import Toggle from "$lib/components/Toggle.svelte";
 
 
   export let position = ''; // tl, tr, bl, br
 
+  let commentToggle;
+  let isHoverButton = false;
   let isHoverLanguages = false;
 </script>
 
@@ -42,16 +45,15 @@
   </div>
 
   <div class="h-px w-full bg-bordergray"></div>
-  <SidebarHeading title="26 Comments" className="pl-3"/>
-  <div class="flex w-full" on:click={() => {overlayClosed.close(); languageOverlay.open()}}>
-    <div class="flex relative w-full items-center h-8 px-2 cursor-pointer select-none hover:bg-buttonblue-100 active:bg-buttonblue-200">
-      <div class="relative flex justify-center items-center z-10 h-6 w-6 min-w-[24px]">
-        <Icon icon="spellcheck"/>
-      </div>
-  
+  <SidebarHeading title="26 Comments" className="pl-[14px]"/>
+
+  <div class="flex w-full" on:click={() => {commentToggle.toggleButton()}}>
+    <div class="flex relative w-full items-center h-8 px-1.5 cursor-pointer select-none hover:bg-buttonblue-100 {isHoverButton ? '' : 'active:bg-buttonblue-200'}">
       <div class="relative z-10 flex-grow text-left text-sm text-buttonblue-900 pl-1.5 max-w-full overflow-hidden whitespace-nowrap text-ellipsis">
-        Check spelling & grammar
+        Show comments
       </div>
+
+      <Toggle bind:this={commentToggle} on:mouseenter={() => isHoverButton = true} on:mouseleave={() => isHoverButton = false}/>
     </div>
   </div>
 </Menu>
