@@ -148,4 +148,48 @@
 {#if icon === 'content_copy'}
 <svg class={_iconClass} xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
 {/if}
-
+{#if icon === 'custom_comment_add'}
+<svg class={_iconClass} width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M 0 1.969 C 0 1.437 0.195 0.977 0.586 0.586 C 0.977 0.195 1.438 0 1.969 0 L 18 0 C 18.531 0 18.992 0.195 19.383 0.586 C 19.773 0.977 19.969 1.437 19.969 1.969 L 19.969 13.969 C 19.969 14.5 19.773 14.969 19.383 15.375 C 18.992 15.781 18.531 15.984 18 15.984 L 13.016 15.984 L 9.984 19.969 L 7.008 15.984 C 7.008 15.984 2.537 15.984 1.969 15.984 C 1.401 15.984 0.906 15.769 0.586 15.375 C 0.266 14.981 0 14.484 0 13.969 C -0 12.443 0 1.969 0 1.969 Z M 15.984 3.984 L 3.984 3.984 L 3.984 6 L 15.984 6 Z M 15.984 6.984 L 3.984 6.984 L 3.984 9 L 15.984 9 Z M 15.984 9.984 L 3.984 9.984 L 3.984 12 L 15.984 12 Z" transform="translate(1 0)" name="r"></path></svg>
+{/if}
+{#if icon === 'cached'}
+<svg class={_iconClass} xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"/></svg>
+{/if}
+{#if icon === 'delete'}
+<svg class={_iconClass} xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+{/if}
+{#if icon === 'custom_placement_left'}
+<svg class={_iconClass} width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="A4" transform="translate(-380.000000, -415.000000)"><g id="Group-3" transform="translate(380.000000, 415.000000)"><rect id="Rectangle" x="0" y="0" width="24" height="24"></rect><rect id="Rectangle" fill="#505E76" x="6" y="4" width="12" height="2"></rect><rect id="Rectangle-Copy" fill="#505E76" x="6" y="18" width="12" height="2"></rect><rect id="Rectangle-Copy-2" fill="#505E76" x="6" y="9" width="8" height="6" rx="2"></rect></g></g></g></svg>
+{/if}
+{#if icon === 'custom_placement_center'}
+<svg class={_iconClass} width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="A4" transform="translate(-411.000000, -415.000000)"><g id="Group-3-Copy" transform="translate(411.000000, 415.000000)"><rect id="Rectangle" x="0" y="0" width="24" height="24"></rect><rect id="Rectangle" fill="#505E76" x="6" y="4" width="12" height="2"></rect><rect id="Rectangle-Copy" fill="#505E76" x="6" y="18" width="12" height="2"></rect><rect id="Rectangle-Copy-2" fill="#505E76" x="8" y="9" width="8" height="6" rx="2"></rect></g></g></g></svg>
+{/if}
+{#if icon === 'custom_placement_right'}
+<svg class={_iconClass} width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="A4" transform="translate(-439.000000, -415.000000)"><g id="Group-3-Copy-2" transform="translate(439.000000, 415.000000)"><rect id="Rectangle" x="0" y="0" width="24" height="24"></rect><rect id="Rectangle" fill="#505E76" x="6" y="4" width="12" height="2"></rect><rect id="Rectangle-Copy" fill="#505E76" x="6" y="18" width="12" height="2"></rect><rect id="Rectangle-Copy-2" fill="#505E76" x="10" y="9" width="8" height="6" rx="2"></rect></g></g></g></svg>
+{/if}
+{#if icon === 'custom_orientation_portrait'}
+<svg class={_iconClass} width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="A4" transform="translate(-380.000000, -449.000000)"><g id="Group-3-Copy-3" transform="translate(380.000000, 449.000000)"><rect id="Rectangle" x="0" y="0" width="24" height="24"></rect><rect id="Rectangle-Copy-2" fill="#505E76" x="6" y="3" width="12" height="18" rx="2"></rect></g></g></g></svg>
+{/if}
+{#if icon === 'custom_orientation_landscape'}
+<svg class={_iconClass} width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="A4" transform="translate(-411.000000, -449.000000)"><g id="Group-3-Copy-4" transform="translate(411.000000, 449.000000)"><rect id="Rectangle" x="0" y="0" width="24" height="24"></rect><rect id="Rectangle-Copy-2" fill="#505E76" x="3" y="6" width="18" height="12" rx="2"></rect></g></g></g></svg>
+{/if}
+{#if icon === 'custom_placement_top'}
+<svg class={_iconClass} width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="A4" transform="translate(-439.000000, -486.000000)"><g id="Group-3-Copy-2" transform="translate(439.000000, 486.000000)"><rect id="Rectangle" x="0" y="0" width="24" height="24"></rect><rect id="Rectangle" fill="#505E76" x="6" y="13" width="12" height="2"></rect><rect id="Rectangle-Copy" fill="#505E76" x="6" y="18" width="12" height="2"></rect><rect id="Rectangle-Copy-2" fill="#505E76" x="6" y="4" width="12" height="6" rx="2"></rect></g></g></g></svg>
+{/if}
+{#if icon === 'custom_placement_middle'}
+<svg class={_iconClass} width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="A4" transform="translate(-380.000000, -486.000000)"><g id="Group-3" transform="translate(380.000000, 486.000000)"><rect id="Rectangle" x="0" y="0" width="24" height="24"></rect><rect id="Rectangle" fill="#505E76" x="6" y="4" width="12" height="2"></rect><rect id="Rectangle-Copy" fill="#505E76" x="6" y="18" width="12" height="2"></rect><rect id="Rectangle-Copy-2" fill="#505E76" x="6" y="9" width="12" height="6" rx="2"></rect></g></g></g></svg>
+{/if}
+{#if icon === 'custom_placement_bottom'}
+<svg class={_iconClass} width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="A4" transform="translate(-411.000000, -486.000000)"><g id="Group-3-Copy" transform="translate(411.000000, 486.000000)"><rect id="Rectangle" x="0" y="0" width="24" height="24"></rect><rect id="Rectangle" fill="#505E76" x="6" y="4" width="12" height="2"></rect><rect id="Rectangle-Copy" fill="#505E76" x="6" y="9" width="12" height="2"></rect><rect id="Rectangle-Copy-2" fill="#505E76" x="6" y="14" width="12" height="6" rx="2"></rect></g></g></g></svg>
+{/if}
+{#if icon === 'remove'}
+<svg class={_iconClass} xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 13H5v-2h14v2z"/></svg>
+{/if}
+{#if icon === 'custom_width_minimal'}
+<svg class={_iconClass} width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="A4" transform="translate(-411.000000, -415.000000)"><g id="Group-3-Copy" transform="translate(411.000000, 415.000000)"><rect id="Rectangle" x="0" y="0" width="24" height="24"></rect><rect id="Rectangle" fill="#505E76" x="6" y="4" width="12" height="2"></rect><rect id="Rectangle-Copy" fill="#505E76" x="6" y="18" width="12" height="2"></rect><rect id="Rectangle-Copy-2" fill="#505E76" x="8" y="9" width="8" height="6" rx="2"></rect></g></g></g></svg>
+{/if}
+{#if icon === 'custom_width_normal'}
+<svg class={_iconClass} width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="A4" transform="translate(-411.000000, -521.000000)"><g id="Group-3-Copy" transform="translate(411.000000, 521.000000)"><rect id="Rectangle" x="0" y="0" width="24" height="24"></rect><rect id="Rectangle" fill="#505E76" x="6" y="4" width="12" height="2"></rect><rect id="Rectangle-Copy" fill="#505E76" x="6" y="18" width="12" height="2"></rect><rect id="Rectangle-Copy-2" fill="#505E76" x="6" y="9" width="12" height="6" rx="2"></rect></g></g></g></svg>
+{/if}
+{#if icon === 'custom_width_full'}
+<svg class={_iconClass} width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="A4" transform="translate(-439.000000, -521.000000)"><g id="Group-3-Copy" transform="translate(439.000000, 521.000000)"><rect id="Rectangle" x="0" y="0" width="24" height="24"></rect><rect id="Rectangle" fill="#505E76" x="6" y="4" width="12" height="2"></rect><rect id="Rectangle-Copy" fill="#505E76" x="6" y="18" width="12" height="2"></rect><rect id="Rectangle-Copy-2" fill="#505E76" x="4" y="9" width="16" height="6" rx="2"></rect></g></g></g></svg>
+{/if}

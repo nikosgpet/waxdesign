@@ -3,8 +3,12 @@ import Heading1 from "$lib/components/Document/Heading1.svelte";
 import Heading2 from "$lib/components/Document/Heading2.svelte";
 import Heading3 from "$lib/components/Document/Heading3.svelte";
 import Paragraph from "$lib/components/Document/Paragraph.svelte";
+import Image from "$lib/components/Document/Image.svelte";
+import Table from "$lib/components/Document/Table/Table.svelte";
 
 </script>
+
+
 <div class="scrollbar ml-[-224px] overflow-y-auto  w-full">
   <div class="w-[722px] pt-10 pb-16 mx-auto">
     <Heading1>
@@ -18,7 +22,7 @@ import Paragraph from "$lib/components/Document/Paragraph.svelte";
       growth at the organizations we studied, there was a fourth driver 
       we hadn’t considered at all: purpose.
     </Paragraph>
-    <Paragraph>
+    <!-- <Paragraph>
       Companies have long been encouraged to build purpose into what they do. 
       But usually it’s talked about as an add-on—a way to create shared value, 
       improve employee morale and commitment, give back to the community, 
@@ -28,7 +32,7 @@ import Paragraph from "$lib/components/Document/Paragraph.svelte";
       committed leadership and financial investment, they had used it to 
       generate sustained profitable growth, stay relevant in a rapidly changing 
       world, and deepen ties with their stakeholders.
-    </Paragraph>
+    </Paragraph> -->
 
     <Heading2>
       Two Critical Roles
@@ -55,6 +59,7 @@ import Paragraph from "$lib/components/Document/Paragraph.svelte";
       in market share come at a high cost, often eroding profits and competitive 
       advantage as offerings become commoditized.
     </Paragraph>
+    <Image src="/img2.jpg" figure="Figure 1" caption="Art by Tom Shearer"></Image>
     <Paragraph>
       High-growth companies, by contrast, don’t feel limited to their current 
       playing field. Instead, they think about whole ecosystems, where connected 
@@ -62,6 +67,7 @@ import Paragraph from "$lib/components/Document/Paragraph.svelte";
       opportunities. But these firms don’t approach ecosystems haphazardly. 
       They let purpose be their guide.
     </Paragraph>
+    <Table figure="Table 1" caption="Three largest cities of Europe"/>
     <Paragraph>
       Consider the different strategies adopted by the two leading companies 
       in the pet-food industry: Nestlé Purina PetCare, the largest player in 

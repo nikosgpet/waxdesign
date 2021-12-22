@@ -28,6 +28,7 @@
     "gsap",
     "iarna",
     "inbutton",
+    "jndex",
     "mouseenter",
     "mouseleave",
     "mouseout",
@@ -43,6 +44,7 @@
     "preprocessors",
     "prerender",
     "rgba",
+    "selectionchange",
     "Smallcaps",
     "smartlife",
     "smartthings",
@@ -50,6 +52,8 @@
     "sveltejs",
     "sveltekit",
     "tailwindcss",
+    "tbody",
+    "thead",
     "vite"
   ],
   "files.watcherExclude": {

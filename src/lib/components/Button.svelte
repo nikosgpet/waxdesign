@@ -32,7 +32,7 @@
 
 
 <div
-  class="{tooltipPosition === 'right' ? 'relative' : ''}"
+  class="peer {tooltipPosition === 'right' ? 'relative' : ''}"
 >
   <button 
     on:click|stopPropagation={onClick}

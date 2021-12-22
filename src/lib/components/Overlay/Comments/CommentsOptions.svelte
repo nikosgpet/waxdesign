@@ -2,8 +2,6 @@
   import Menu from "$lib/components/Overlay/Menu.svelte";
   import Icon from '$lib/components/Icon.svelte';
   import SidebarHeading from "$lib/components/Sidebar/SidebarHeading.svelte";
-  import overlayClosed from '$lib/stores/overlay';
-  import languageOverlay from '$lib/stores/languageOverlay';
   import CommentOption from "$lib/components/Overlay/Comments/CommentOption.svelte";
   import CommentsAcceptReject from "$lib/components/Overlay/Comments/CommentsAcceptReject.svelte";
   import Toggle from "$lib/components/Toggle.svelte";
