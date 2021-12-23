@@ -43,7 +43,7 @@
     <div class="relative top-[10px] -right-px h-[calc(100%+2px)] w-[11px] {debug ? 'bg-blue-700' : ''}" on:mouseenter={() => dispatch('mouseenterY', 0)} on:mouseleave></div>
   </div>
 
-  <div class="absolute flex flex-col justify-end z-10 top-0 bottom-0 left-[22px] w-[200px] border {debug ? '' : 'border-transparent'}" on:mouseenter={leftOnHover} on:mouseleave={leftOnHoverOut}> <!-- Top hover area -->
+  <div class="absolute flex flex-col justify-end z-10 -top-px bottom-0 left-[22px] w-[200px] border {debug ? '' : 'border-transparent'}" on:mouseenter={leftOnHover} on:mouseleave={leftOnHoverOut}> <!-- Top hover area -->
     <div class="absolute top-[7px] z-30 left-[9px] w-1 h-1 rounded-full bg-buttonblue-600"> <!-- Add button -->
       {#if activeLeft}
       <ButtonAdd {table}/>

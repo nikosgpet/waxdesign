@@ -5,7 +5,9 @@
   import AddComment from "$lib/components/Overlay/HelperBar/AddComment.svelte";
   import TableHelper from "$lib/components/Overlay/Table/TableHelper.svelte";
   import Button from "$lib/components/Button.svelte";
-import RowOptions from "$lib/components/Overlay/Table/RowOptions.svelte";
+  import RowOptions from "$lib/components/Overlay/Table/RowOptions.svelte";
+  import SideOverlay from "$lib/components/Overlay/Editing/SideOverlay.svelte";
+
 
   export let figure;
   export let caption;
@@ -20,7 +22,7 @@ import RowOptions from "$lib/components/Overlay/Table/RowOptions.svelte";
   let active = false;
   let tableEl;
   let debug = false;
-
+  let showSideOverlay = false;
 
   let x = null;
   let y = null;
@@ -47,7 +49,11 @@ import RowOptions from "$lib/components/Overlay/Table/RowOptions.svelte";
 
 <svelte:window on:click={() => {active = false}}></svelte:window>
 
-<div class="relative ml-[48px] my-10 mb-5">
+<div 
+  class="relative pl-[48px] my-10 mb-5"
+  on:mouseenter={() => showSideOverlay = true} 
+  on:mouseleave={() => showSideOverlay = false}
+>
   <table 
     bind:this={tableEl} 
     on:click|stopPropagation={() => {active = true}}
@@ -96,9 +102,10 @@ import RowOptions from "$lib/components/Overlay/Table/RowOptions.svelte";
             {h}
             <Button
               icon="keyboard_arrow_down"
-              className="absolute z-10 group w-4 h-4 top-[4px] right-[4px] bg-white border hidden group-focus:flex hover:flex
+              className="absolute z-10 group w-4 h-4 top-[4px] right-[4px] bg-white border hidden group-focus:flex group-hover:flex
                 hover:border-buttonblue-800 hover:bg-buttonblue-800 active:bg-buttonblue-900 hover:border-none"
               iconClass="hover:fill-white"
+              containerClass="group-hover:block hover:block"
             >
               <RowOptions slot="overlay" position="tl"/>
             </Button>
@@ -132,9 +139,10 @@ import RowOptions from "$lib/components/Overlay/Table/RowOptions.svelte";
             {row}
             <Button
               icon="keyboard_arrow_down"
-              className="absolute z-10 group w-4 h-4 top-[4px] right-[4px] bg-white border hidden group-focus:flex hover:flex
+              className="absolute z-10 group w-4 h-4 top-[4px] right-[4px] bg-white border hidden group-focus:flex group-hover:flex
                 hover:border-buttonblue-800 hover:bg-buttonblue-800 active:bg-buttonblue-900 hover:border-none"
               iconClass="hover:fill-white"
+              containerClass="group-hover:block hover:block"
             >
               <RowOptions slot="overlay" position="tl"/>
             </Button>
@@ -153,6 +161,10 @@ import RowOptions from "$lib/components/Overlay/Table/RowOptions.svelte";
       {caption}
     </div>
   </div>
+
+  {#if showSideOverlay && !active}
+  <SideOverlay/>
+  {/if}
 
   {#if active}
   <TableHelper/>

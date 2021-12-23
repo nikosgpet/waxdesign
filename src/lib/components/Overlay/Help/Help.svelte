@@ -7,7 +7,7 @@
 </script>
 
 
-<div class="flex justify-end absolute items-center bottom-0 right-0 select-none w-[264px] h-11 mr-2 gap-2 rounded bg-white bg-opacity-95 pr-2">
+<div class="flex justify-end absolute items-center bottom-0.5 right-0 select-none w-[264px] h-11 mr-2 gap-2 rounded bg-white bg-opacity-95 pr-2">
 
   <Button 
     icon="keyboard_arrow_up"

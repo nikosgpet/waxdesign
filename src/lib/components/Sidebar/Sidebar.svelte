@@ -21,7 +21,7 @@
   }
 </script>
 
-<div class="flex relative h-full bg-white">
+<div class="flex relative z-10 h-full bg-white">
   <div class="flex flex-col items-center w-12 h-full border-r border-r-bordergray gap-[10px] py-3">
     <Button 
       on:click={onClick(Sidebars.Headings)} 

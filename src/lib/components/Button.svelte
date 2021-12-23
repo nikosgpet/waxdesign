@@ -17,6 +17,7 @@
   export let deactivateTooltip = false;
   export let overlayPosition = 'bottom'; // top, bottom
   export let iconClass = '';
+  export let containerClass = '';
 
   const dispatch = createEventDispatcher();
   let showOverlay = false;
@@ -32,7 +33,7 @@
 
 
 <div
-  class="peer {tooltipPosition === 'right' ? 'relative' : ''}"
+  class="peer {tooltipPosition === 'right' ? 'relative' : ''} {containerClass}"
 >
   <button 
     on:click|stopPropagation={onClick}

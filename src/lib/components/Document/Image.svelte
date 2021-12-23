@@ -1,6 +1,7 @@
 <script>
   import AddComment from "$lib/components/Overlay/HelperBar/AddComment.svelte";
   import ImageHelper from "$lib/components/Overlay/Image/ImageHelper.svelte";
+  import SideOverlay from "$lib/components/Overlay/Editing/SideOverlay.svelte";
 
 
   export let src;
@@ -9,11 +10,16 @@
   export let caption;
   
   let active = false;
+  let showSideOverlay = false;
 </script>
 
 <svelte:window on:click={() => {active = false}}></svelte:window>
 
-<div class="relative ml-[48px]">
+<div 
+  class="relative pl-[48px]"
+  on:mouseenter={() => showSideOverlay = true} 
+  on:mouseleave={() => showSideOverlay = false}
+>
   <img 
     {src} 
     {alt}
@@ -29,6 +35,10 @@
       {caption}
     </div>
   </div>
+
+  {#if showSideOverlay}
+  <SideOverlay/>
+  {/if}
 
   {#if active}
   <ImageHelper/>

@@ -1,15 +1,24 @@
 <script>
-import Heading1 from "$lib/components/Document/Heading1.svelte";
-import Heading2 from "$lib/components/Document/Heading2.svelte";
-import Heading3 from "$lib/components/Document/Heading3.svelte";
-import Paragraph from "$lib/components/Document/Paragraph.svelte";
-import Image from "$lib/components/Document/Image.svelte";
-import Table from "$lib/components/Document/Table/Table.svelte";
+  import Heading1 from "$lib/components/Document/Heading1.svelte";
+  import Heading2 from "$lib/components/Document/Heading2.svelte";
+  import Heading3 from "$lib/components/Document/Heading3.svelte";
+  import Paragraph from "$lib/components/Document/Paragraph.svelte";
+  import Image from "$lib/components/Document/Image.svelte";
+  import Table from "$lib/components/Document/Table/Table.svelte";
+  import Footnote from "$lib/components/Inline/Footnote.svelte";
+  import Link from "$lib/components/Inline/Link.svelte";
+  import ChapterReference from "$lib/components/Inline/ChapterReference.svelte";
+  import Reference from "$lib/components/Inline/Reference.svelte";
+  import Spelling from "$lib/components/Inline/Spelling.svelte";
+  import CustomStyle from "$lib/components/Inline/CustomStyle.svelte";
+  import Caret from "$lib/components/Inline/Caret.svelte";
+
+  let n = 1;
 
 </script>
 
 
-<div class="scrollbar ml-[-224px] overflow-y-auto  w-full">
+<div class="scrollbar overflow-y-auto w-full">
   <div class="w-[722px] pt-10 pb-16 mx-auto">
     <Heading1>
       Putting Purpose at the Core of Your Strategy
@@ -20,7 +29,7 @@ import Table from "$lib/components/Document/Table/Table.svelte";
       serving broader stakeholder needs, and changing the rules of the game. 
       What we found surprised us. Although each of those approaches did boost 
       growth at the organizations we studied, there was a fourth driver 
-      we hadn’t considered at all: purpose.
+      we hadn’t considered at all: purpose <Footnote n={n++}/>.
     </Paragraph>
     <!-- <Paragraph>
       Companies have long been encouraged to build purpose into what they do. 
@@ -38,14 +47,21 @@ import Table from "$lib/components/Document/Table/Table.svelte";
       Two Critical Roles
     </Heading2>
     <Paragraph>
-      In the course of our research, we talked to scores of C-level executives. 
-      They worked at 28 companies—in the United States, Europe, and India—that 
+      In the course of our research, we talked to 
+      <Spelling message="The article-noun agreement do not match" corrections={["scores", "a score"]}>a scores</Spelling>
+      of C-level executives. 
+      <Spelling message="Spelling mistake" corrections={["They worked"]}>The worked</Spelling>
+       at 28 companies—in the <Caret/>United States, Europe, and India—that 
       had had an average compound annual growth rate of 30% or more in the 
-      previous five years. What we learned from those conversations was that 
-      purpose played two important strategic roles: It helped companies redefine 
-      the playing field, and it allowed them to reshape the value proposition. 
+      previous five years. What we learned from those conversations was that purpose played 
+      <Link href="https://hbr.org/2019/09/put-purpose-at-the-core-of-your-strategy">two important strategic roles</Link>:
+      It helped companies redefine 
+      the playing field, and it allowed them to reshape the value proposition
+      <Reference src="/img2.jpg" title="Image 1" subtitle="Art by Tom Shearer"/>.
       And that, in turn, enabled them to overcome the challenges of slowing 
-      growth and declining profitability.
+      growth and declining profitability      
+      <Reference subtitle="M. P. Kyriakoudis, J. P. Morin, K. L. Morris" title="A census of human transcription factors: A brief review" inverse={true}/>
+      <Reference title="Table 1" subtitle="Three largest cities of Europe"/>.
     </Paragraph>
 
     <Heading3>
@@ -54,9 +70,9 @@ import Table from "$lib/components/Document/Table/Table.svelte";
     <Paragraph>
       What’s a key difference between low-growth and high-growth companies? 
       The former spend most of their time fighting for market share on one playing 
-      field, which naturally restricts their growth potential. And because most 
-      aggressive battles take place in industries that are slowing down, gains 
-      in market share come at a high cost, often eroding profits and competitive 
+      field, which naturally restricts their growth potential <Footnote n={n++}/>. And because 
+      <CustomStyle>most aggressive battles take place in industries that are slowing down</CustomStyle>
+      , gains in market share come at a high cost, often eroding profits and competitive 
       advantage as offerings become commoditized.
     </Paragraph>
     <Image src="/img2.jpg" figure="Figure 1" caption="Art by Tom Shearer"></Image>
@@ -65,7 +81,7 @@ import Table from "$lib/components/Document/Table/Table.svelte";
       playing field. Instead, they think about whole ecosystems, where connected 
       interests and relationships among multiple stakeholders create more 
       opportunities. But these firms don’t approach ecosystems haphazardly. 
-      They let purpose be their guide.
+      (See <ChapterReference>Chapter 3: Reach Beyond Existing Demand</ChapterReference>)
     </Paragraph>
     <Table figure="Table 1" caption="Three largest cities of Europe"/>
     <Paragraph>
@@ -77,13 +93,14 @@ import Table from "$lib/components/Document/Table/Table.svelte";
       products that will help customers improve their pets’ health. But Purina 
       has continued to focus on the pet-food playing field and is applying purpose 
       in some inspiring social initiatives, whereas Mars Petcare is using purpose 
-      to propel its expansion in the broader field of pet health.
+      to propel its expansion in the broader field of pet health <Footnote n={n++}/>.
     </Paragraph>
     <Paragraph>
       Mars Petcare, which had established a foothold in pet health with the 
       acquisition of Banfield Pet Hospital in 2007, decided to build its presence 
       in that arena by buying two other veterinary services: BluePearl in 2015 and 
-      VCA in 2017. Then in 2018 Mars Petcare entered the European veterinary market, 
+      VCA in 2017.
+       Then in 2018 Mars Petcare entered the European veterinary market, 
       buying the Swedish company AniCura, which has operations in seven European 
       countries, and the British company Linnaeus. Those acquisitions helped Mars 
       Petcare become Mars Inc.’s largest and fastest-growing business division.
@@ -92,7 +109,7 @@ import Table from "$lib/components/Document/Table/Table.svelte";
       In moving deeper into this larger ecosystem, Mars Petcare did more than just 
       capitalize on a burgeoning industry. It also shifted its orientation beyond 
       products to services, a radical change for an asset-heavy company that for 75 
-      years had relied on the production and sale of goods. To succeed, the company 
+      years had relied on the production and sale of goods <Footnote n={n++}/>. To succeed, the company 
       had to build completely different core competencies and devise a new organizational 
       structure. Many companies in this dangerously open-ended situation might have 
       flailed, but Mars Petcare did not. It was able to pull off a transformation because 
@@ -104,7 +121,7 @@ import Table from "$lib/components/Document/Table/Table.svelte";
       Another company that has used purpose to redefine the playing field, this time in the 
       industrial sector, is the Finnish oil-refining firm Neste. For more than six decades 
       Neste, founded in 1948, operated a business focused almost entirely on crude oil, but 
-      by 2009 it was struggling. The market was glutted, oil prices had dropped sharply, 
+      by 2009 it was struggling <Footnote n={n++}/>. The market was glutted, oil prices had dropped sharply, 
       margins were falling, and the EU had passed new carbon-emissions legislation. During 
       the previous two years the company’s market value had shrunk by 50%.
     </Paragraph>

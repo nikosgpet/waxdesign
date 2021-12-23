@@ -15,6 +15,6 @@
 />
 <div
   class="absolute {left ? 'h-0.5 top-px': 'w-0.5 left-px'} peer-hover:bg-slate-600"
-  style="{left ? '': `height:${table?.getBoundingClientRect?.()?.height + 24}px`} {left ? `width:${table?.getBoundingClientRect?.()?.width + 25}px` : ''}"
+  style="{left ? '': `height:${table?.getBoundingClientRect?.()?.height + 25}px`} {left ? `width:${table?.getBoundingClientRect?.()?.width + 26}px` : ''}"
 >
 </div>

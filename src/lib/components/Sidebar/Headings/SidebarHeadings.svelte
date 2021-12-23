@@ -22,6 +22,7 @@
   <SidebarHeading title="Inline"/>
   <SidebarButton title="Bold"/>
   <SidebarButton title="Italic"/>
+  <SidebarButton title="Emphasis" sub='last'/>
   <SidebarButton title="Underline"/>
   <SidebarButton title="Strikethrough"/>
   <SidebarButton title="Superscript"/>

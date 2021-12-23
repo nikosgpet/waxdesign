@@ -22,7 +22,7 @@
 </script>
 
 {#if visible}
-<div 
+<div
   class="absolute flex justify-end w-[34px] top-[-1px] bottom-[1px] left-[-35px] cursor-pointer h-[calc(100%+2px)] border-t {debug ? '' : 'border-transparent'}"
   on:mouseenter={onHover}
   on:mouseleave={onHoverOut}

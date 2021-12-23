@@ -8,7 +8,12 @@
 </script>
 
 
-<div class="absolute z-20 {absoluteClass}" style={absoluteStyle}>
+<div 
+  class="absolute z-20 {absoluteClass}" 
+  style={absoluteStyle}
+  on:mouseenter
+  on:mouseleave
+>
   <div class="{enableOverflow ? '' : 'scrollbar overflow-y-auto overflow-x-hidden'} bg-white rounded border border-bordergray 
         {shadow === 'sm' ? 'drop-shadow-lg' : 
           'lg' ? 'drop-shadow-lg' : 
