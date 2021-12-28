@@ -1,7 +1,9 @@
 <script type="ts">
+	import Icon from '$lib/components/Icon.svelte';
   import Button from "$lib/components/Button.svelte";
 
   export let title;
+  export let icon = null;
   export let sub = '';
   export let active = false;
   export let deactivateTooltip = false;
@@ -24,7 +26,11 @@
           "
   >
     {#if !sub}
-      <div class="relative z-10 h-6 w-6 min-w-[24px] mr-2 border border-buttonblue-300 rounded-[4px] bg-white"></div>
+      <div class="relative flex items-center justify-center z-10 h-6 w-6 min-w-[24px] mr-2 border border-buttonblue-300 rounded-[4px] bg-white">
+        {#if icon}
+        <Icon {icon}/>
+        {/if}
+      </div>
     {/if}
   
     <div class="relative z-10 flex-grow text-left text-sm text-buttonblue-900 max-w-full overflow-hidden whitespace-nowrap text-ellipsis">

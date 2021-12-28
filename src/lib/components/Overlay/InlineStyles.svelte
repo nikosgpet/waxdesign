@@ -10,21 +10,20 @@
 
 <Menu {position} className="px-1.5 pb-2 w-56 h-80">
   <SidebarHeading title="Inline"/>
-  <SidebarButton deactivateTooltip={true} title="Bold"/>
-  <SidebarButton deactivateTooltip={true} title="Italic"/>
-  <SidebarButton deactivateTooltip={true} title="Underline"/>
-  <SidebarButton deactivateTooltip={true} title="Strikethrough"/>
-  <SidebarButton deactivateTooltip={true} title="Superscript"/>
-  <SidebarButton deactivateTooltip={true} title="Subscript"/>
-  <SidebarButton deactivateTooltip={true} title="Smallcaps"/>
-  <SidebarButton deactivateTooltip={true} title="Inline quote"/>
-  <SidebarButton deactivateTooltip={true} title="Inline code"/>
+  <SidebarButton deactivateTooltip={true} title="Bold" icon="format_bold"/>
+  <SidebarButton deactivateTooltip={true} title="Italic" icon="format_italic"/>
+  <SidebarButton deactivateTooltip={true} title="Underline" icon="format_underlined"/>
+  <SidebarButton deactivateTooltip={true} title="Strikethrough" icon="strikethrough_s"/>
+  <SidebarButton deactivateTooltip={true} title="Superscript" icon="superscript"/>
+  <SidebarButton deactivateTooltip={true} title="Subscript" icon="subscript"/>
+  <SidebarButton deactivateTooltip={true} title="Inline quote" icon="format_quote"/>
+  <SidebarButton deactivateTooltip={true} title="Inline code" icon="code"/>
 
   <SidebarHeading title="Inline mentions"/>
-  <SidebarButton deactivateTooltip={true} title="Mention an image"/>
-  <SidebarButton deactivateTooltip={true} title="Mention a table"/>
-  <SidebarButton deactivateTooltip={true} title="Mention a footnote"/>
-  <SidebarButton deactivateTooltip={true} title="Mention a page"/>
-  <SidebarButton deactivateTooltip={true} title="Scientific reference"/>
+  <SidebarButton deactivateTooltip={true} title="Mention an image" icon="image"/>
+  <SidebarButton deactivateTooltip={true} title="Mention a table" icon="border_all"/>
+  <SidebarButton deactivateTooltip={true} title="Mention a footnote" icon=""/>
+  <SidebarButton deactivateTooltip={true} title="Mention a page" icon=""/>
+  <SidebarButton deactivateTooltip={true} title="Scientific reference" icon=""/>
 </Menu>
 
