@@ -25,7 +25,7 @@
       </div>
       <div 
         class="text-[13px] py-1  whitespace-nowrap focus:outline-none
-          {!edit ? 'text-buttonblue-600 text-ellipsis overflow-hidden' : 'text-[#1b2b4b] cursor-text overflow-x-auto scrollbar-none'}" 
+          {!edit ? 'text-buttonblue-600 text-ellipsis overflow-hidden' : 'text-textblue cursor-text overflow-x-auto scrollbar-none'}" 
         contenteditable={edit}
       >
         {href}

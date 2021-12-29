@@ -17,6 +17,7 @@
   export let deactivateTooltip = false;
   export let overlayPosition = 'bottom'; // top, bottom
   export let iconClass = '';
+  export let iconColor = '';
   export let containerClass = '';
 
   const dispatch = createEventDispatcher();
@@ -46,20 +47,21 @@
             {$$slots.overlay && showOverlay ? `bg-buttonblue-200 ${overlayRounded}` : ''}"
   >
     <slot>
-      <Icon {icon} {size} {iconClass}/>
+      <div class="hidden">icon={icon} size={size} iconClass={iconClass} color={iconColor}</div>
+      <Icon {icon} {size} {iconClass} color={iconColor}/>
     </slot>
   </button>
 
-  <Tooltip 
-    {tooltip} 
-    {subTooltip} 
-    {tooltipPosition} 
-    {tooltipClass} 
+  <Tooltip
+    {tooltip}
+    {subTooltip}
+    {tooltipPosition}
+    {tooltipClass}
     showTooltip={((tooltip !== '' && hoverTooltip) || showTooltip) && !showOverlay && !deactivateTooltip}
   />
 
-  {#if $$slots.overlay && showOverlay}
-  <Overlay on:close={() => showOverlay = false}>
+  {#if $$slots.overlay}
+  <Overlay {showOverlay} on:close={() => showOverlay = false}>
     <slot name="overlay"></slot>
   </Overlay>
   {/if}

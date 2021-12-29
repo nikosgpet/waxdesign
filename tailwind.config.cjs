@@ -18,6 +18,7 @@ const config = {
           800: '#515e76',
           900: '#334361',
         },
+        textblue: '#1b2b4b',
       },
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],

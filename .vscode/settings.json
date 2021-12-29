@@ -29,6 +29,7 @@
     "iarna",
     "inbutton",
     "jndex",
+    "ldquo",
     "mouseenter",
     "mouseleave",
     "mouseout",
@@ -43,6 +44,7 @@
     "postcss",
     "preprocessors",
     "prerender",
+    "rdquo",
     "rgba",
     "selectionchange",
     "Smallcaps",
@@ -53,6 +55,7 @@
     "sveltekit",
     "tailwindcss",
     "tbody",
+    "textblue",
     "thead",
     "vite"
   ],

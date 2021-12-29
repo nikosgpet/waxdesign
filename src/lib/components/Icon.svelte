@@ -1,11 +1,18 @@
 <script type="ts">
   export let icon = null;
   export let size = 'small'; // small, medium
-  export let iconClass = ''
+  export let iconClass = '';
+  export let color = '';
 
-  const _iconClass = `${size === 'small' ? 'h-[18px] w-[18px]' : 'h-[24px] w-[24px]'} fill-buttonblue-800 ${iconClass}`;
+  $: _iconClass = setIconClass(size, color, iconClass);
+
+  function setIconClass(s, c, ic) {
+    return `${size === 'small' ? 'h-[18px] w-[18px]' : 'h-[24px] w-[24px]'} ${color ? color : 'fill-buttonblue-800'} ${iconClass}`;
+  }
 
 </script>
+
+<div class="hidden">{size === 'small' ? 'h-[18px] w-[18px]' : 'h-[24px] w-[24px]'} {color} {color ? color : 'fill-buttonblue-800'} {iconClass}</div>
 
 {#if icon === 'add'}
 <svg class={_iconClass} xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0z" fill="none"/><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>

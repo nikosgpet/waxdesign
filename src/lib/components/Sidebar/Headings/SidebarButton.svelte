@@ -28,7 +28,7 @@
     {#if !sub}
       <div class="relative flex items-center justify-center z-10 h-6 w-6 min-w-[24px] mr-2 border border-buttonblue-300 rounded-[4px] bg-white">
         {#if icon}
-        <Icon {icon}/>
+        <Icon {icon} color="fill-buttonblue-800"/>
         {/if}
       </div>
     {/if}

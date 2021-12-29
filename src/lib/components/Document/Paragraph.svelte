@@ -6,7 +6,7 @@
 
 
 <Block>
-  <p class="text-[#1b2b4b] mb-3 focus-visible:outline-none" contenteditable="true" data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false">
+  <p class="text-textblue mb-3 focus-visible:outline-none" contenteditable="true" data-gramm="false" data-gramm_editor="false" data-enable-grammarly="false">
     <slot></slot>
   </p>
 </Block>
