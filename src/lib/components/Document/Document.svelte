@@ -3,6 +3,7 @@
   import Suggestion from "$lib/components/Comments/Suggestion.svelte";
   import Comment from "$lib/components/Comments/Comment.svelte";
   import { addSuggestion, removeSuggestion, formatSuggestion, soloComment, doubleComment, tripleComment } from '$lib/stores/comments';
+  import WelcomeMessage from "$lib/components/Document/WelcomeMessage.svelte";
 
 </script>
 
@@ -92,3 +93,5 @@
     </div>
   </div>
 </div>
+
+<WelcomeMessage/>
