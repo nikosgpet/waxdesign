@@ -60,10 +60,10 @@
     class="border-collapse table-fixed w-full border border-buttonblue-500"
   >
     <thead class="">
-      <tr class="relative font-medium bg-buttonblue-100">
+      <tr class="relative font-medium">
         {#each head as h, index}
         <th
-          class="relative p-2 border text-left
+          class="relative border text-left
             {y === 0 || x === index || x === -1 ? 'border-buttonblue-800' : 'border-buttonblue-500'}
             {x === index + 1 ? 'border-r-buttonblue-800' : ''}
             {y === 1 ? 'border-b-buttonblue-800' : ''}"
@@ -98,7 +98,7 @@
             on:mouseenter={(e) => onMouseEnterX(index + e.detail)} 
             on:mouseleave={() => {onMouseLeaveX()}}
           />
-          <div class="group focus-visible:outline-none" contenteditable>
+          <div class="group bg-buttonblue-100 p-2 focus-visible:outline-none" contenteditable>
             {h}
             <Button
               icon="keyboard_arrow_down"
@@ -174,4 +174,3 @@
   <AddComment boundaries={{x:0, y:-36}}/>
   {/if}
 </div>
-

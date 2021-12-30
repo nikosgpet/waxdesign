@@ -1,4 +1,5 @@
 <script type="ts">
+	import Highlight from '$lib/components/Comments/Highlight.svelte';
   import Heading1 from "$lib/components/Document/Heading1.svelte";
   import Heading2 from "$lib/components/Document/Heading2.svelte";
   import Heading3 from "$lib/components/Document/Heading3.svelte";
@@ -12,6 +13,8 @@
   import Spelling from "$lib/components/Inline/Spelling.svelte";
   import CustomStyle from "$lib/components/Inline/CustomStyle.svelte";
   import Caret from "$lib/components/Inline/Caret.svelte";
+  import HighlightEnum from "$lib/types/Highlight.enum";
+  import { addSuggestion, removeSuggestion, formatSuggestion, unreadComment, readComment, doubleComment, tripleComment } from '$lib/stores/comments';
 
   let n = 1;
 
@@ -25,7 +28,10 @@
   Eight years ago we launched a global study of high growth in companies, 
   investigating the importance of three strategies known to drive it: creating new markets, 
   serving broader stakeholder needs, and changing the rules of the game. 
-  What we found surprised us. Although each of those approaches did boost 
+  <Highlight type={HighlightEnum.Comment} status={tripleComment}>
+    What we found surprised us.
+  </Highlight>
+  Although each of those approaches did boost 
   growth at the organizations we studied, there was a fourth driver 
   we hadn’t considered at all: purpose <Footnote n={n++}/>.
 </Paragraph>
@@ -78,27 +84,38 @@
   High-growth companies, by contrast, don’t feel limited to their current 
   playing field. Instead, they think about whole ecosystems, where connected 
   interests and relationships among multiple stakeholders create more 
-  opportunities. But these firms don’t approach ecosystems haphazardly. 
+  opportunities. 
+  <Highlight type={HighlightEnum.Comment} status={doubleComment}>
+    But these firms don’t approach ecosystems haphazardly. 
+  </Highlight>
   (See <ChapterReference>Chapter 3: Reach Beyond Existing Demand</ChapterReference>)
 </Paragraph>
 <Table figure="Table 1" caption="Three largest cities of Europe"/>
 <Paragraph>
-  Consider the different strategies adopted by the two leading companies 
-  in the pet-food industry: Nestlé Purina PetCare, the largest player in 
+  Consider 
+  <Highlight type={HighlightEnum.Add} status={addSuggestion}>
+    the different strategies adopted by the two leading companies in 
+  </Highlight>
+  the pet-food industry: Nestlé Purina PetCare, the largest player in 
   North America; and Mars Petcare, the global leader. The companies have 
   defined very similar purposes for themselves—“Better with pets” (Purina) 
   and “A better world for pets” (Mars Petcare)—and both want to develop new 
-  products that will help customers improve their pets’ health. But Purina 
-  has continued to focus on the pet-food playing field and is applying purpose 
+  products that will help customers improve their pets’ health. But 
+  <Highlight type={HighlightEnum.Remove} status={removeSuggestion}>
+    as one would expect
+  </Highlight>
+  Purina has continued to focus on the pet-food playing field and is applying purpose 
   in some inspiring social initiatives, whereas Mars Petcare is using purpose 
   to propel its expansion in the broader field of pet health <Footnote n={n++}/>.
 </Paragraph>
 <Paragraph>
   Mars Petcare, which had established a foothold in pet health with the 
   acquisition of Banfield Pet Hospital in 2007, decided to build its presence 
-  in that arena by buying two other veterinary services: BluePearl in 2015 and 
-  VCA in 2017.
-    Then in 2018 Mars Petcare entered the European veterinary market, 
+  in that arena by buying two other veterinary services: 
+  <Highlight type={HighlightEnum.Format} status={formatSuggestion} className="italic">
+    BluePearl in 2015 and VCA in 2017.
+  </Highlight>
+  Then in 2018 Mars Petcare entered the European veterinary market, 
   buying the Swedish company AniCura, which has operations in seven European 
   countries, and the British company Linnaeus. Those acquisitions helped Mars 
   Petcare become Mars Inc.’s largest and fastest-growing business division.

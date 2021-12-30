@@ -29,5 +29,5 @@
       <CommentsOptions slot="overlay" position="tr"/>
     </Button>
   </div>
-  <div class="h-[10px] w-full bg-gradient-to-b from-white to-transparent"></div>
+  <div class="h-[10px] w-full bg-gradient-to-b from-[rgba(255,255,255,93)]"></div>
 </div>
