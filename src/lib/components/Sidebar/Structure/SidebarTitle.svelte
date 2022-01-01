@@ -3,7 +3,6 @@
   import Icon from "$lib/components/Icon.svelte";
 
   export let title;
-  export let sub = '';
   export let active = false;
   let showSubButton = false;
   let hoverSubButton = false;

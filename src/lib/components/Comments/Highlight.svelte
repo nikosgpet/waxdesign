@@ -20,7 +20,7 @@
 
 <span 
   class="
-    {type === HighlightEnum.Comment ? `bg-[#fee8a8] ${$status.active || $status.hover ? 'bg-[#fee394]' : ''}` : ''}
+    {type === HighlightEnum.Comment ? `border-b-2 border-[#fee053] ${$status.active || $status.hover ? 'bg-[#fee394] border-[#fee394]' : ''}` : ''}
     {type !== HighlightEnum.Comment ? `text-[rgb(31,161,93)] ${$status.active || $status.hover ? 'bg-[#defdec]' : ''}` : ''}
     {type === HighlightEnum.Remove ? 'line-through': ''}
     {className}"

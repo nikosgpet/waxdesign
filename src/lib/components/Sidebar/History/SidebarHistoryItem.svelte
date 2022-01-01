@@ -1,5 +1,4 @@
 <script type="ts">
-  export let img = null;
   export let title;
   export let subtitle;
 

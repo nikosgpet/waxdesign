@@ -109,6 +109,13 @@
   dependencies:
     esbuild "^0.13.15"
 
+"@sveltejs/adapter-cloudflare@^1.0.0-next.5":
+  version "1.0.0-next.5"
+  resolved "https://registry.yarnpkg.com/@sveltejs/adapter-cloudflare/-/adapter-cloudflare-1.0.0-next.5.tgz#d74bd4ec4bf10fa47863f1e45c988b660ec51782"
+  integrity sha512-I7kLcINJz0zik+ufb+IAWSn/EHxdTdmGF0M3tizd87Cxw2ke7N/A6XF8YrYDgZ/4yrAcZnR8Texas/5WxPYZ6g==
+  dependencies:
+    esbuild "^0.13.15"
+
 "@sveltejs/adapter-netlify@1.0.0-next.36":
   version "1.0.0-next.36"
   resolved "https://registry.yarnpkg.com/@sveltejs/adapter-netlify/-/adapter-netlify-1.0.0-next.36.tgz#a1037f67940fce59c49aa64854843d428f55c49c"
