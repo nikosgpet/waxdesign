@@ -2,10 +2,10 @@
   import Menu from "$lib/components/Overlay/Menu.svelte";
   import Overlay from "$lib/components/Overlay/Overlay.svelte";
   import Button from "$lib/components/Button.svelte";
-
+  
 
   export let position = ''; // tl, tr, bl, br
-  let showOverlay = true;
+  export let showOverlay = true;
 
 </script>
 
@@ -13,11 +13,11 @@
 <Overlay
   {showOverlay}
   on:close={() => showOverlay = false}
-  className="bg-black bg-opacity-60 z-50"
+  className="bg-black bg-opacity-60 !z-50"
 >
   <Menu
     {position}
-    absoluteClass="right-0 left-0 top-0 bottom-0 flex items-center justify-center z-[60]"
+    absoluteClass="right-0 left-0 top-0 bottom-0 flex items-center justify-center !z-[60]"
     className="px-4 py-6 w-[560px] text-textblue"
   >
     <div class="text-center text-2xl font-medium">

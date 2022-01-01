@@ -5,6 +5,8 @@
   import { addSuggestion, removeSuggestion, formatSuggestion, soloComment, doubleComment, tripleComment } from '$lib/stores/comments';
   import WelcomeMessage from "$lib/components/Document/WelcomeMessage.svelte";
 
+  export let showOverlay = true;
+
 </script>
 
 
@@ -94,4 +96,4 @@
   </div>
 </div>
 
-<WelcomeMessage/>
+<WelcomeMessage {showOverlay}/>
