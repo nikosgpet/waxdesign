@@ -23,7 +23,7 @@
 
   <div class="flex w-full" on:click={() => {captionToggle.toggleButton()}}>
     <div class="flex relative w-full items-center h-8 px-1.5 cursor-pointer select-none hover:bg-buttonblue-100 {isHoverButtonCaption ? '' : 'active:bg-buttonblue-200'}">
-      <div class="relative z-10 flex-grow text-left text-sm text-buttonblue-900 pl-1.5 max-w-full overflow-hidden whitespace-nowrap text-ellipsis">
+      <div class="relative z-10 flex-grow text-left text-sm text-buttonblue-900 pl-1.5 max-w-full truncate">
         Caption
       </div>
 
@@ -35,7 +35,7 @@
 
   <div class="flex w-full" on:click={() => {altToggle.toggleButton()}}>
     <div class="flex relative w-full items-center h-8 px-1.5 cursor-pointer select-none hover:bg-buttonblue-100 {isHoverButtonAlt ? '' : 'active:bg-buttonblue-200'}">
-      <div class="relative z-10 flex-grow text-left text-sm text-buttonblue-900 pl-1.5 max-w-full overflow-hidden whitespace-nowrap text-ellipsis">
+      <div class="relative z-10 flex-grow text-left text-sm text-buttonblue-900 pl-1.5 max-w-full truncate">
         Numbered column
       </div>
 
@@ -45,7 +45,7 @@
 
   <div class="flex w-full" on:click={() => {linkToggle.toggleButton()}}>
     <div class="flex relative w-full items-center h-8 px-1.5 select-none gap-1">
-      <div class="relative z-10 flex-grow text-left text-sm text-buttonblue-900 pl-1.5 max-w-full overflow-hidden whitespace-nowrap text-ellipsis">
+      <div class="relative z-10 flex-grow text-left text-sm text-buttonblue-900 pl-1.5 max-w-full truncate">
         Header rows
       </div>
 
@@ -69,7 +69,7 @@
 
   <div class="flex w-full" on:click={() => {linkToggle.toggleButton()}}>
     <div class="flex relative w-full items-center h-8 px-1.5 select-none gap-1">
-      <div class="relative z-10 flex-grow text-left text-sm text-buttonblue-900 pl-1.5 max-w-full overflow-hidden whitespace-nowrap text-ellipsis">
+      <div class="relative z-10 flex-grow text-left text-sm text-buttonblue-900 pl-1.5 max-w-full truncate">
         Header columns
       </div>
 
@@ -121,7 +121,7 @@
 
   <div class="flex w-full" on:click={() => {captionToggle.toggleButton()}}>
     <div class="flex relative w-full items-center h-8 px-1.5 cursor-pointer select-none hover:bg-buttonblue-100 {isHoverButtonCaption ? '' : 'active:bg-buttonblue-200'}">
-      <div class="relative z-10 flex-grow text-left text-sm text-buttonblue-900 pl-1.5 max-w-full overflow-hidden whitespace-nowrap text-ellipsis">
+      <div class="relative z-10 flex-grow text-left text-sm text-buttonblue-900 pl-1.5 max-w-full truncate">
         Break in pages
       </div>
 
@@ -131,7 +131,7 @@
 
   <div class="flex w-full" on:click={() => {captionToggle.toggleButton()}}>
     <div class="flex relative w-full items-center h-8 px-1.5 cursor-pointer select-none hover:bg-buttonblue-100 {isHoverButtonCaption ? '' : 'active:bg-buttonblue-200'}">
-      <div class="relative z-10 flex-grow text-left text-sm text-buttonblue-900 pl-1.5 max-w-full overflow-hidden whitespace-nowrap text-ellipsis">
+      <div class="relative z-10 flex-grow text-left text-sm text-buttonblue-900 pl-1.5 max-w-full truncate">
         Repeat header
       </div>
 

@@ -24,8 +24,8 @@
         <Icon icon="link"/>
       </div>
       <div 
-        class="text-[13px] py-1  whitespace-nowrap focus:outline-none
-          {!edit ? 'text-buttonblue-600 text-ellipsis overflow-hidden' : 'text-textblue cursor-text overflow-x-auto scrollbar-none'}" 
+        class="text-[13px] py-1 whitespace-nowrap focus:outline-none
+          {!edit ? 'text-buttonblue-600 truncate' : 'text-textblue cursor-text overflow-x-auto scrollbar-none'}" 
         contenteditable={edit}
       >
         {href}

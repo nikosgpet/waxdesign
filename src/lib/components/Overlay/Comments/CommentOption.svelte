@@ -15,7 +15,7 @@
       <Icon {icon} iconClass="w-[22px]"/>
     </div>
     
-    <div class="relative z-10 flex-grow text-left text-sm text-buttonblue-900 pl-1.5 max-w-full overflow-hidden whitespace-nowrap text-ellipsis">
+    <div class="relative z-10 flex-grow text-left text-sm text-buttonblue-900 pl-1.5 max-w-full truncate">
       {title}
     </div>
   </div>

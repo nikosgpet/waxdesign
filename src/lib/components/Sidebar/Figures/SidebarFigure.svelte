@@ -14,10 +14,10 @@
     </div>
     {/if}
 
-    <div class="relative z-10 mb-1 max-w-full overflow-hidden whitespace-nowrap text-ellipsis flex-grow text-left text-xs font-medium text-buttonblue-900">
+    <div class="relative z-10 mb-1 max-w-full truncate flex-grow text-left text-xs font-medium text-buttonblue-900">
       {title}
     </div>
-    <div class="relative z-10 max-w-full overflow-hidden whitespace-nowrap text-ellipsis flex-grow text-left text-xs text-buttonblue-800">
+    <div class="relative z-10 max-w-full truncate flex-grow text-left text-xs text-buttonblue-800">
       {subtitle}
     </div>
   </div>
