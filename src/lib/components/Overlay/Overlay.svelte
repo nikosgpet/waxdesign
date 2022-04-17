@@ -4,6 +4,7 @@
 
   export let className = '';
   export let showOverlay = false;
+  export let preload = false;
 
   $: onClose($overlayClosed);
 
@@ -14,7 +15,7 @@
   }
 </script>
 
-
+{#if showOverlay || preload}
 <div class="{showOverlay ? 'block' : 'hidden'}">
   <div 
     on:click|stopPropagation={onClose}
@@ -23,3 +24,4 @@
   </div>
   <slot></slot>
 </div>
+{/if}

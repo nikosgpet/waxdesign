@@ -48,6 +48,7 @@
       className="h-6 pr-0.5"
       tooltip="Add block" 
       tooltipClass="mt-1"
+      preloadOverlay
     >
       <div class="pl-2 pr-3 inline-block text-sm text-buttonblue-800 font-medium">Text</div> 
       <Icon icon="arrow_drop_down"/>
@@ -58,6 +59,7 @@
       className="h-6 pr-0.5"
       tooltip="Choose inline | style" 
       tooltipClass="mt-1"
+      preloadOverlay
     >
       <div class="pl-2 pr-4 inline-block text-sm text-buttonblue-800 font-medium">Styles</div> 
       <Icon icon="arrow_drop_down"/> 

@@ -19,6 +19,7 @@
   export let iconClass = '';
   export let iconColor = '';
   export let containerClass = '';
+  export let preloadOverlay = false;
 
   const dispatch = createEventDispatcher();
   let showOverlay = false;
@@ -61,7 +62,7 @@
   />
 
   {#if $$slots.overlay}
-  <Overlay {showOverlay} on:close={() => showOverlay = false}>
+  <Overlay {showOverlay} on:close={() => showOverlay = false} preload={preloadOverlay}>
     <slot name="overlay"></slot>
   </Overlay>
   {/if}
