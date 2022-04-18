@@ -14,6 +14,6 @@ As this is a prototype, not a working text editor, most buttons offer very limit
 
 This prototype is built with SvelteKit
 
-# Run Project
+## Run Project
 
 `yarn dev`

@@ -31,7 +31,8 @@
     </div>
     
     <div class="text-center text-lg pt-4 px-10">
-      Since this is a prototype, not a working editor, most buttons offer very limited functionality.
+      Since this is a prototype, not a working editor, most buttons offer very limited functionality. 
+      The source code is available in <a class="text-blue-700" href="https://github.com/nikosgpet/waxdesign" target="_blank">github</a>.
     </div>
 
     <Button className="h-9 w-48 mx-auto mt-6 uppercase border border-buttonblue-800" on:click={() => showOverlay = false}>
